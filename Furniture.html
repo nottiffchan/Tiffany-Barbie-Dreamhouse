@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TIFFANY BARBIE DREAMHOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="misc/icon.ico" />
+
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="misc/logo.png"></a>
+            </div>
+            <ul class="links">
+                <a href="login.html"><img src="misc/user.png"></a>
+                <a href="likes.html"><img src="misc/heart.png"></a>
+                <input type='image' name="cart" src="misc/cart.png" onclick="openNav()">
+            </ul>
+
+        </div>
+        <div>
+            <ul class="bar">
+                <li><a href="Dreamhouses.html">Dreamhouses</a></li>
+                <li  class="active"><a href="Furniture.html">Furniture</a></li>
+                <li><a href="TiffanyDolls.html">Boats</a></li>
+                <li><a href="TiffanyDolls.html">Tiffany Dolls™</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Furniture</h1>
+        </div>
+
+    </header>
+
+
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="cartTit">
+            SHOPPING CART
+        </div>
+    
+        <div class="cartDesc">
+            Why empty go buy stuff now pls
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "400px";
+            document.getElementById("main").style.marginLeft = "400px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
+
+    <div class="grid">
+        <div class="pix">
+            <img src="furniture/bed.png">
+            <div class="desc">Pink Doll Bed</div>
+            <div class="price">$4999</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/bench.png">
+            <div class="desc">Antique Bench</div>
+            <div class="price">$1.99</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/dining.png">
+            <div class="desc">Antique Dining Set</div>
+            <div class="price">$2000</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/office.png">
+            <div class="desc">Dollhouse Work Desk</div>
+            <div class="price">$50</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/dresser.png">
+            <div class="desc">Dollhouse Dresser</div>
+            <div class="price">$90</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/fruits.jpg">
+            <div class="desc">Doll Fruitstand</div>
+            <div class="price">$380</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/sidetable.png">
+            <div class="desc">Dollhouse Sidetable</div>
+            <div class="price">$70</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/sofa.png">
+            <div class="desc">Yellow Dollhouse Sofa</div>
+            <div class="price">$890</div>
+        </div>
+        <div class="pix">
+            <img src="furniture/dog.jpeg">
+            <div class="desc">Dollhouse Furry Friend</div>
+            <div class="price">$0.99</div>
+        </div>
+    </div>
+
+
+    <div class="footer" style="top: 60cm;">
+        <hr>
+        <div class="botlogo">
+            <img src="misc/logo.png" height="80px">
+        </div>
+    
+    
+    
+        <div class='mail'>
+            <input type="email" name="email" id="email_input" placeholder="your email here">
+        </div>
+        <button>subscribe</button>
+    
+        <div class="r">
+            <div class="c" style="color:black;">
+                <h2>customer care</h2>
+                <p>‎‏‏ ‎‏‏‎ ‎‏‏‎</p>
+                <p>contact</p>
+                <p>FAQ</p>
+                <p>shipping</p>
+            </div>
+            <div class="c" style="color:black;"">
+                    <h2>more about us</h2>
+                    <p>‎‏‏ ‎‏‏‎ ‎‏‏‎</p>
+                    <p>e-gift card</p>
+                    <p>promotions</p>
+                    <p>careers</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

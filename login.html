@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TIFFANY BARBIE DREAMHOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="misc/icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        .links {
+            list-style-type: none;
+            float: right;
+            margin-top: 25px;
+        }
+
+    
+        /* style inputs and link buttons */
+        input:not(.cart), .btn {
+            width: 50%;
+            padding: 11px;
+            border: none;
+            margin: 5px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 15px;
+            /* text-decoration: none; */
+    
+            /* remove underline from anchors */
+        }
+    
+        input:hover,
+        .btn:hover {
+            opacity: 1;
+        }
+    
+        /* add appropriate colors to fb, twitter and google buttons */
+        .fb {
+            /* background-color: #3B5998; */
+            background-color: rgb(238, 183, 231);
+            color: white;
+            width: 6.8%;
+            border-radius: 50%;
+        }
+    
+        .twitter {
+            /* background-color: #55ACEE; */
+            background-color: rgb(238, 183, 231);
+            color: white;
+            width: 6.8%;
+            border-radius: 50%;
+    
+        }
+    
+        .google {
+            /* background-color: #dd4b39; */
+            color: white;
+            background-color: rgb(238, 183, 231);
+            width: 6.8%;
+            border-radius: 50%;
+    
+        }
+    
+        /* style the submit button */
+        input[type=submit] {
+            background-color: rgb(238, 183, 231);
+            width: 30%;
+            /* border: #666; */
+            color: white;
+            cursor: pointer;
+        }
+    
+        input[type=submit]:hover {
+            background-color: rgb(219, 172, 213);
+        }
+    
+        /* Two-column layout */
+        .col {
+            float: left;
+            width: 40%;
+            margin: auto;
+            padding: 0 50px;
+            margin-top: 2cm;
+        }
+    
+        .first {
+            margin-left: 6cm;
+            width: 45%;
+        }
+    
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    
+        /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 650px) {
+            .col {
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="misc/logo.png"></a>
+            </div>
+            <ul class="links">
+                <a href="login.html"><img src="misc/user.png"></a>
+                <a href="likes.html"><img src="misc/heart.png"></a>
+                <input type='image' class='cart' name="cart" src="misc/cart.png" onclick="openNav()">
+            </ul>
+    
+        </div>
+        <div>
+            <ul class="bar">
+                <li><a href="Dreamhouses.html">Dreamhouses</a></li>
+                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a href="TiffanyDolls.html">Boats</a></li>
+                <li><a href="TiffanyDolls.html">Tiffany Dolls™</a></li>
+            </ul>
+        </div>
+
+    
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="cartTit">
+            SHOPPING CART
+        </div>
+    
+        <div class="cartDesc">
+            Why empty go buy stuff now pls
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "400px";
+            document.getElementById("main").style.marginLeft = "400px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <h2 style="text-align:center">Log in / Sign up</h2>
+    
+                <div class="col first">
+                    <h3>New? Sign up today!</h3>
+                    <br>
+                    <h5>Sign in with social, or enter your email and join us</h5>
+                    <br>
+                    <!-- <br> -->
+                    <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i>
+                    </a>
+                    <a href="#" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i>
+                    </a>
+                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                        </i>
+                    </a>
+                    <br><br>
+    
+                    <input type="text" name="email" placeholder="email" required
+                        style="background-color: rgb(235, 233, 233);">
+                    <br>
+                    <input type="submit" value="create account">
+                </div>
+    
+                <div class="col">
+
+                    <h3>Already Registered?</h3>
+                    <br><br>
+    
+                    <input type="text" name="username" placeholder="username" required
+                        style="background-color: rgb(235, 233, 233);">
+                    <input type="password" name="password" placeholder="password" required
+                        style="background-color: rgb(235, 233, 233);">
+                    <br>
+                    <input type="submit" value="sign in">
+                </div>
+    
+            </div>
+        </form>
+    </div>
+
+    <div class="footer" style="top: 20cm;">
+        <hr>
+        <div class="botlogo">
+            <img src="misc/logo.png" height="80px">
+        </div>
+    
+    
+    
+        <div class='mail'>
+            <input type="email" name="email" id="email_input" placeholder="your email here">
+        </div>
+        <button>subscribe</button>
+    
+        <div class="r">
+            <div class="c" style="color:black;">
+                <h2>customer care</h2>
+                <p>‎‏‏ ‎‏‏‎ ‎‏‏‎</p>
+                <p>contact</p>
+                <p>FAQ</p>
+                <p>shipping</p>
+            </div>
+            <div class="c" style="color:black;"">
+                        <h2>more about us</h2>
+                        <p>‎‏‏ ‎‏‏‎ ‎‏‏‎</p>
+                        <p>e-gift card</p>
+                        <p>promotions</p>
+                        <p>careers</p>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

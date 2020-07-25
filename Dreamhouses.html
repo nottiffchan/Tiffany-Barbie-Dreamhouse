@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TIFFANY BARBIE DREAMHOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="misc/icon.ico" />
+
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="misc/logo.png"></a>
+            </div>
+            <ul class="links">
+                <a href="login.html"><img src="misc/user.png"></a>
+                <a href="likes.html"><img src="misc/heart.png"></a>
+                <input type='image' name="cart" src="misc/cart.png" onclick="openNav()">
+            </ul>
+
+        </div>
+        <div>
+            <ul class="bar">
+                <li class="active"><a href="Dreamhouses.html">Dreamhouses</a></li>
+                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a href="TiffanyDolls.html">Boats</a></li>
+                <li><a href="TiffanyDolls.html">Tiffany Dolls™</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Dreamhouses</h1>
+        </div>
+
+    </header>
+
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="cartTit">
+            SHOPPING CART
+        </div>
+
+        <div class="cartDesc">
+            Why empty go buy stuff now pls
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "400px";
+            document.getElementById("main").style.marginLeft = "400px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
+
+    <div class="grid">
+        <div class="pix">
+            <img src="misc/h1.png">
+            <div class="desc">Quaint Victorian Farmhouse</div>
+            <div class="price">$500</div>
+        </div>
+        <div class="pix">
+            <img src="misc/h3.png">
+            <div class="desc">Transylvanian-Style House</div>
+            <div class="price">$890</div>
+        </div>
+        <div class="pix">
+            <img src="misc/h2.png">
+            <div class="desc">Sweet Country Farmhouse</div>
+            <div class="price">$599</div>
+        </div>
+        <div class="pix">
+            <img src="misc/h5.png">
+            <div class="desc">Vintage Olive Farmhouse</div>
+            <div class="price">$700</div>
+        </div>
+        <div class="pix">
+            <img src="misc/h4.png">
+            <div class="desc">Blue House with Adjoining Pavilion</div>
+            <div class="price">$1099</div>
+        </div>
+        <div class="pix">
+            <img src="misc/h6.png">
+            <div class="desc">1980s London Townhouse</div>
+            <div class="price">$10</div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <hr>
+        <div class="botlogo">
+            <img src="misc/logo.png" height="80px">
+        </div>
+
+
+
+        <div class='mail'>
+            <input type="email" name="email" id="email_input" placeholder="your email here">
+        </div>
+        <button>subscribe</button>
+
+        <div class="r">
+            <div class="c" style="color:black;">
+                <h2>customer care</h2>
+                <p>‎‏‏ ‎‏‏‎ ‎‏‏‎</p>
+                <p>contact</p>
+                <p>FAQ</p>
+                <p>shipping</p>
+            </div>
+            <div class="c" style="color:black;">
+                <h2>more about us</h2>
+                <p>‎‏‏ ‎‏‏‎ ‎‏‏‎</p>
+                <p>e-gift card</p>
+                <p>promotions</p>
+                <p>careers</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
